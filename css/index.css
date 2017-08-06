@@ -1,0 +1,222 @@
+@charset "UTF-8";
+/* 样式初始化 */
+body, h1, h2, h3, h4, h5, h6, hr, p, blockquote, dl, dt, dd, ul, ol, li, pre, form, fieldset, legend, button, input, textarea, th, td {
+  margin: 0;
+  padding: 0; }
+
+/*body, button, input, select, textarea { font:12px/1.5tahoma, arial, \5b8b\4f53; }*/
+h1, h2, h3, h4, h5, h6 {
+  font-size: 100%; }
+
+address, cite, dfn, em, var {
+  font-style: normal; }
+
+code, kbd, pre, samp {
+  font-family: couriernew, courier, monospace; }
+
+small {
+  font-size: 12px; }
+
+ul, ol {
+  list-style: none; }
+
+a {
+  text-decoration: none; }
+
+a:hover {
+  text-decoration: underline; }
+
+sup {
+  vertical-align: text-top; }
+
+sub {
+  vertical-align: text-bottom; }
+
+legend {
+  color: #000; }
+
+fieldset, img {
+  border: 0; }
+
+button, input, select, textarea {
+  font-size: 100%; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+/* 页面样式 */
+* {
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box; }
+
+html {
+  -webkit-tap-highlight-color: transparent; }
+
+body {
+  font-family: "Helvetica Neue", Helvetica, Arial, "PingFang SC",  "Hiragino Sans GB", "Heiti SC", "Microsoft YaHei", "WenQuanYi Micro Hei", sans-serif;
+  position: relative;
+  background-color: #f1f1f1;
+  padding-bottom: 126px; }
+
+.title {
+  text-align: center;
+  font-size: 40px;
+  color: #666;
+  padding-top: 40px;
+  margin-bottom: 20px; }
+
+.title-info {
+  text-align: center;
+  font-size: 24px;
+  color: #999;
+  margin-bottom: 40px;
+  font-style: italic; }
+
+.content {
+  padding: 0 40px; }
+  .content .section {
+    margin-bottom: 40px; }
+    .content .section .section-title {
+      font-size: 16px;
+      color: #666;
+      line-height: 22px; }
+      .content .section .section-title:before {
+        content: '';
+        width: 2px;
+        background: #00c1de;
+        height: 18px;
+        margin-right: 10px;
+        display: inline-block;
+        vertical-align: text-top; }
+    .content .section .section-content {
+      font-size: 0; }
+      .content .section .section-content .grid {
+        display: inline-block;
+        vertical-align: middle;
+        margin-right: 8%;
+        width: 19%;
+        border-radius: 5px;
+        background: #fff;
+        box-shadow: 0 1px 1px rgba(0, 0, 0, 0.05);
+        -webkit-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.05);
+        cursor: pointer;
+        text-decoration: none; }
+        .content .section .section-content .grid .grid-img {
+          position: relative; }
+          .content .section .section-content .grid .grid-img img {
+            border-top-left-radius: 5px;
+            border-top-right-radius: 5px;
+            width: 100%;
+            background-color: skyblue; }
+          .content .section .section-content .grid .grid-img .img-cover {
+            position: absolute;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 0;
+            z-index: 99;
+            display: none; }
+            .content .section .section-content .grid .grid-img .img-cover .btn-enter {
+              position: absolute;
+              width: 100px;
+              height: 32px;
+              line-height: 32px;
+              font-size: 14px;
+              color: #fff;
+              background: rgba(255, 255, 255, 0.3);
+              border-radius: 50px;
+              text-align: center;
+              top: 50%;
+              left: 50%;
+              margin-top: -16px;
+              margin-left: -50px; }
+        .content .section .section-content .grid .grid-info {
+          padding: 34px 20px; }
+          .content .section .section-content .grid .grid-info .grid-title {
+            font-size: 14px;
+            color: #666;
+            font-weight: bold;
+            margin-bottom: 20px; }
+          .content .section .section-content .grid .grid-info .grid-content {
+            font-size: 12px;
+            color: #999; }
+        .content .section .section-content .grid:hover {
+          transition: box-shadow .15s ease-in;
+          box-shadow: 0 30px 30px rgba(0, 0, 0, 0.16); }
+          .content .section .section-content .grid:hover .grid-img .img-cover {
+            border-top-left-radius: 5px;
+            border-top-right-radius: 5px;
+            background: rgba(0, 0, 0, 0.5);
+            display: block; }
+        .content .section .section-content .grid:last-child {
+          margin-right: 0; }
+    .content .section:last-child {
+      margin-bottom: 0; }
+
+@media screen and (max-width: 1440px) and (min-width: 1025px) {
+  .grid {
+    margin-right: 4% !important;
+    margin-top: 30px !important;
+    width: 22% !important; }
+    .grid:nth-child(4n+0) {
+      margin-right: 0 !important; } }
+@media screen and (max-width: 1024px) and (min-width: 769px) {
+  .title {
+    font-size: 30px; }
+
+  .title-info {
+    font-size: 16px; }
+
+  .grid {
+    margin-right: 8% !important;
+    margin-top: 30px !important;
+    width: 28% !important; }
+    .grid:nth-child(3n+0) {
+      margin-right: 0 !important; } }
+@media screen and (max-width: 768px) and (min-width: 481px) {
+  .title {
+    font-size: 30px; }
+
+  .title-info {
+    font-size: 16px;
+    padding: 0 40px; }
+
+  .grid {
+    margin-right: 10% !important;
+    margin-top: 30px !important;
+    width: 45% !important; }
+    .grid:nth-child(2n+0) {
+      margin-right: 0 !important; } }
+@media screen and (max-width: 480px) {
+  .title {
+    font-size: 24px;
+    padding: 40px 40px 0; }
+
+  .title-info {
+    font-size: 14px;
+    padding: 0 40px; }
+
+  .grid {
+    margin-right: 0 !important;
+    margin-top: 30px !important;
+    width: 100% !important; } }
+.footer {
+  position: absolute;
+  bottom: 30px;
+  left: 50%;
+  transform: translate(-50%, 0);
+  -webkit-transform: translateX(-50%) translateY(0);
+  -moz-transform: translateX(-50%) translateY(0);
+  -ms-transform: translateX(-50%) translateY(0);
+  text-align: center;
+  color: #666; }
+  .footer .time {
+    margin-bottom: 20px;
+    font-size: 15px;
+    font-style: italic; }
+  .footer .copyright {
+    font-size: 16px; }
+
+/*# sourceMappingURL=index.css.map */
