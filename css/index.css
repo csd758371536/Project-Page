@@ -95,8 +95,9 @@ body {
       .content .section .section-content .grid {
         display: inline-block;
         vertical-align: middle;
-        margin-right: 8%;
-        width: 19%;
+        margin-right: 5%;
+        margin-top: 30px;
+        width: 16%;
         border-radius: 5px;
         background: #fff;
         box-shadow: 0 1px 1px rgba(0, 0, 0, 0.05);
@@ -150,7 +151,7 @@ body {
             border-top-right-radius: 5px;
             background: rgba(0, 0, 0, 0.5);
             display: block; }
-        .content .section .section-content .grid:last-child {
+        .content .section .section-content .grid:nth-child(5n+0) {
           margin-right: 0; }
     .content .section:last-child {
       margin-bottom: 0; }
