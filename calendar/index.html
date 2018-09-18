@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title></title>
+  <link rel="stylesheet" href="../style/base.css">
+  <link rel="stylesheet" href="./css/test.min.css">
+  <link rel="stylesheet" href="./css/calendar.min.css">
+  <link rel="icon" type="image/x-icon" href="../favicon.ico" />
+  <link rel="shortcut icon" type="image/x-icon" href="../favicon.ico" />
+</head>
+
+<body>
+  <div class="main">
+    <div class="calendar" id="calendar"></div>
+  </div>
+  <script src="./js/calendar.min.js" charset="utf-8"></script>
+  <script type="text/javascript">
+    var calendar = new Calendar('#calendar', {
+        time: new Date()
+    });
+    calendar.on('click', function(calendarTime) {
+        console.log(calendarTime);
+    });
+  </script>
+</body>
+
+</html>
